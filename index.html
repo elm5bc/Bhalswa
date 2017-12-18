@@ -1,0 +1,164 @@
+<html>
+<head>
+	<title>Bhalswa</title>
+
+	<!-- Link to JQuery library (used for modal) -->	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<!-- 	<script src="js/jquery.mobile.custom.min.js"></script>
+-->
+<!-- Link to Mapbox GL JS library -->	
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+
+	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.css' type='text/css' />
+
+<!-- Link to Mapbox GL JS css stylesheet -->	
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Link to bootstrap -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+
+<!-- Link to our custom stylesheet -->	
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+	<section class="cd-horizontal-timeline">
+		<div class="timeline">
+			<div class="events-wrapper">
+				<div class="events">
+					<ol>
+						<li><a href="#0" data-date="16/01/2014" class="selected">19th Cent</a></li>
+						<li><a href="#0" data-date="28/02/2014">1988</a></li>
+						<li><a href="#0" data-date="20/04/2014">1993</a></li>
+						<li><a href="#0" data-date="20/05/2014">2002</a></li>
+						<li><a href="#0" data-date="09/07/2014">2003</a></li>
+						<li><a href="#0" data-date="30/08/2014">2007</a></li>
+						<li><a href="#0" data-date="15/09/2014">2009</a></li>
+						<li><a href="#0" data-date="01/11/2014">2015</a></li>
+						<li><a href="#0" data-date="10/12/2014">2016</a></li>
+						<li><a href="#0" data-date="19/01/2015">2017</a></li>
+						<li><a href="#0" data-date="03/03/2015">2017</a></li>
+					</ol>
+
+					<span class="filling-line" aria-hidden="true"></span>
+				</div> <!-- .events -->
+			</div> <!-- .events-wrapper -->
+
+			<ul class="cd-timeline-navigation">
+				<li><a href="#0" class="prev inactive">Prev</a></li>
+				<li><a href="#0" class="next">Next</a></li>
+			</ul> <!-- .cd-timeline-navigation -->
+		</div> <!-- .timeline -->
+
+		<div class="events-content">
+			<ol>
+				<li class="selected" data-date="16/01/2014">
+					<h2>Bhalswa Lake</h2>
+					<em>15th Century</em>
+					<p>	
+						Bhalswa Lake was formed as a a shifting Yamuna River left behind a meander as it shifted east. Originally horseshoe shaped, the lake now occupies only half of its original size. In the past three decades the western meander has been filled in by urbanization and a growing landfill. Click through the map see changes to the boundary of the lake.
+					</p>
+				</li>
+
+				<li data-date="28/02/2014">
+					<h2>Bhalswa Dairy Farmers Moved</h2>
+					<em>1987</em>
+					<p>	
+						In 1987 the Delhi Government approved a Model Town development to be built on land occupied by dairy farmers. The farmers were moved to land northwest of Bhalswa Lake. This previous agricultural land quickly urbanized.
+					</p>
+				</li>
+
+				<li data-date="20/04/2014">
+					<h2>Bhalswa Landfill Commissioned</h2>
+					<em>1993</em>
+					<p>	
+						In 1993 the Bhalswa Landfill was commissioned as Delhi was quickly urbanizing. The landfill was built scientifically unlined, allowing leachate to pollute the groundwater over time. The landfill also lacks a method of methane capture, resulting in constant fires throughout the site. 
+					</p>
+				</li>
+
+				<li data-date="20/05/2014">
+					<h2>New Sanitary Regulations</h2>
+					<em>2002</em>
+					<p>	
+						New sanitary regulations push the landfill into illegal territory. However the landfill continues to accept waste from Delhi 
+					</p>
+				</li>
+
+				<li data-date="09/07/2014">
+					<h2>Bhalswa Golfcourse Commissioned</h2>
+					<em>2003</em>
+					<p>	
+						Delhi Development Authority commissions the Bhalswa Golfcourse as part of a larger plan to develop Bhalswa Lake area as a sports complex. This is the second golfcourse to be built in Delhi.
+					</p>
+				</li>
+
+				<li data-date="30/08/2014">
+					<h2>Bhalswa Landfill Runs Out of Space</h2>
+					<em>2007</em>
+					<p>	
+						On 40 acres of land and reaching 20 meters in height the Bhalswa Landfill officially runs out of space. A closure date for the landfill is set for November 2009.
+					</p>
+				</li>
+
+				<li data-date="15/09/2014">
+					<h2>Closure Date for Landfill Extended</h2>
+					<em>2009</em>
+					<p>	
+						The closure date for the landfill is reached, however the Bhalswa landfill continues to accept trash.
+					</p>
+				</li>
+
+				<li data-date="01/11/2014">
+					<h2>Composting Plant Shutdown</h2>
+					<em>2015</em>
+					<p>	
+						The company running a compost plant at Bhalswa landfill decides to shut the plant down after receiving a closure notice for violating pollution laws under India's Water and Air Prevention and Control acts. 
+				</li>
+
+				<li data-date="10/12/2014">
+					<h2>Bhalswa Lake Deemed Toxic</h2>
+					<em>2016</em>
+					<p>	
+						A water quality study of Bhalswa Lake finds the lake is reaching toxic levels. The lake is receiving groundwater pollution from the nearby landfill and sewage overflow from nearby urban areas. 
+					</p>
+				</li>
+
+				<li data-date="19/01/2015">
+					<h2>Bhalswa Landfill Reaches 60m in Height</h2>
+					<em>2017</em>
+					<p>	
+						Bhalswa Landfill hits the 60 meter mark, as the landfill is estimated at containing over 15 million tonnes of trash. 
+					</p>
+				</li>
+
+				<li data-date="03/03/2015">
+					<h2>Air Pollution Levels Reach Record Level</h2>
+					<em>2017</em>
+					<p>	
+						Air pollution levels in Delhi are recorded as off the charts. 
+					</p>
+				</li>
+			</ol>
+		</div> <!-- .events-content -->
+	</section>
+</div>
+
+<div id='before' class='map'></div>
+<div id='after' class='map'></div>
+
+</body>
+
+<!-- Link to our custom javascript -->	
+<script src="js/map.js"></script>
+<script src="js/main.js"></script> 
+--></html>
